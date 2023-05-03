@@ -1,0 +1,302 @@
+/* Reset básico */
+@font-face {
+    font-family: 'Hot Coffe';
+    src: url(Hot\ Coffee.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Coffe Icons';
+    src: url(coffee\ icons.ttf) format('truetype');
+}
+:root {
+    --cor-padrao-escura: rgb(51, 51, 51);
+    --cor-padrao-escura2: rgb(31, 31, 31);
+    --cor-padrao-escura3: rgb(23, 23, 23);
+    --cor-padrao-clara: rgb(255, 255, 255);
+    --cor-padrao-clara2: rgb(216, 216, 216);
+    --cor-padrao-clara3: rgb(180, 180, 180);
+    --fonte-estilizada: 'Hot Coffe', cursive;
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --icones: 'Coffe Icons';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--cor-padrao-escura);
+  }
+  .icones {
+    font-family: var(--icones);
+  }
+  
+  a {
+    color: var(--cor-padrao-escura);
+    text-decoration: none;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: var(--cor-padrao-clara);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--fonte-estilizada);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  nav a:hover {
+    background-color: rgb(51, 31, 22);
+    color: var(--cor-padrao-clara);
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 10px 2px rgb(42, 28, 20);
+  }
+  
+  /* Estilos do banner */
+  #banner {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.678)), url('cafe-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-padrao-clara);
+    padding: 20px;
+  }
+  
+  #banner h2 {
+    font-family: var(--fonte-estilizada);
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  #banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-padrao-clara);
+    color: var(--cor-padrao-escura);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--cor-padrao-escura);
+    color: var(--cor-padrao-clara);
+  }
+  
+  /* Estilos do "Sobre" */
+  #sobre {
+    background-color: var(--cor-padrao-clara);
+    padding: 40px;
+  }
+  
+  #sobre h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right,var(--cor-padrao-clara2) , rgb(255, 255, 255));
+    padding-left: 20px;
+  }
+  
+  #sobre p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos dos "Produtos" */
+  #produtos {
+    padding: 40px;
+  }
+  li img{
+    max-width: 100%;
+  }
+  #flatwhite{
+    margin-top: -18%;
+  }
+  #capuccino{
+    margin-left: 20%;
+    max-width: 66%;
+  }
+  
+  #produtos h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right,var(--cor-padrao-clara2) , rgb(255, 255, 255));
+    padding-left: 20px;
+  }
+  
+  #produtos ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #produtos li {
+    flex-basis: calc(33.33% - 20px);
+    background-color: var(--cor-padrao-clara);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  
+/* Estilos do rodapé */
+footer {
+background-color: var(--cor-padrao-escura);
+color: var(--cor-padrao-clara);
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+/* Estilos da seção de contato */
+#contato {
+padding: 40px;
+}
+
+#contato h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+background-image: linear-gradient(to right,var(--cor-padrao-clara2) , rgb(255, 255, 255));
+    padding-left: 20px;
+}
+
+#contato form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#contato input,
+#contato textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato textarea {
+height: 150px;
+}
+
+#contato button[type="submit"] {
+background-color: var(--cor-padrao-escura);
+color: var(--cor-padrao-clara);
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+#contato button[type="submit"]:hover {
+background-color: var(--cor-padrao-clara);
+color: var(--cor-padrao-escura);
+cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+background-color: var(--cor-padrao-escura);
+color: var(--cor-padrao-clara);
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+/* Estilos da seção de contato */
+#contato {
+padding: 40px;
+}
+
+#contato h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+#contato form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#contato input,
+#contato textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato textarea {
+height: 150px;
+}
+
+#contato button[type="submit"] {
+background-color: var(--cor-padrao-escura);
+color: var(--cor-padrao-clara);
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+#contato button[type="submit"]:hover {
+background-color: var(--cor-padrao-clara);
+color: var(--cor-padrao-escura);
+cursor: pointer;
+}
