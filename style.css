@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+    font-family: var(--fonte-padrao);
   }
   
   /* Estilos globais */
@@ -70,10 +71,11 @@
   
   nav a {
     font-weight: bold;
-    padding: 20px;
+    padding: 16px;
     border-radius: 20px;
     font-size: 1.2em;
   }
+
   nav a:hover {
     background-color: var(--cor-fundo-marrom);
     color: var(--cor-padrao-clara);
@@ -146,7 +148,7 @@
   }
   
   /* Estilos dos "Produtos" */
-  #produtos {
+  .produtos {
     padding: 40px;
   }
   li img{
@@ -160,7 +162,7 @@
     max-width: 66%;
   }
   
-  #produtos h2 {
+  .produtos h2 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -168,13 +170,13 @@
     padding-left: 20px;
   }
   
-  #produtos ul {
+  .produtos ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
   }
   
-  #produtos li {
+  .produtos li {
     flex-basis: calc(33.33% - 20px);
     background-color: var(--cor-padrao-clara);
     padding: 20px;
@@ -183,20 +185,31 @@
     overflow: hidden;
   }
 
-  @media screen and (max-width: 1000px) {
-    #produtos ul {
+  @media screen and (max-width: 800px) {
+    #geral ul {
       flex-wrap: wrap;
     }
     
     
-    #produtos li {
+    #geral li {
       flex-basis: 100%;
       margin-bottom: 20px;
     }
   }
 
-  li p {
+  .separados li {
+    min-width: 300px;
+  }
+
+  .separados {
+    display: block;
+  }
+
+  .separados p {
+    text-indent: 20px;
+    width: 100%;
     text-align: justify;
+    margin-left: 25px;
   }
   
   
