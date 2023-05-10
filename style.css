@@ -54,7 +54,7 @@
   header h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: var(--fonte-estilizada);
   }
   
@@ -72,12 +72,13 @@
     font-weight: bold;
     padding: 20px;
     border-radius: 20px;
+    font-size: 1.2em;
   }
   nav a:hover {
     background-color: var(--cor-fundo-marrom);
     color: var(--cor-padrao-clara);
     transition-duration: 0.3s;
-    box-shadow: 0px 0px 10px 2px var(--cor-fundo-marrom);
+    box-shadow: 0px 0px 10px 0px var(--cor-fundo-marrom);
   }
   
   /* Estilos do banner */
@@ -182,6 +183,22 @@
     overflow: hidden;
   }
 
+  @media screen and (max-width: 1000px) {
+    #produtos ul {
+      flex-wrap: wrap;
+    }
+    
+    
+    #produtos li {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  li p {
+    text-align: justify;
+  }
+  
   
 /* Estilos do rodapé */
 footer {
