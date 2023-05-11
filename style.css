@@ -205,7 +205,7 @@
     display: block;
   }
 
-  .separados p {
+  .separados ul > p {
     text-indent: 20px;
     width: 100%;
     text-align: justify;
