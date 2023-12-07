@@ -1,2 +1,2 @@
 # Yafe
- Site desenvolvido no curso de informática com o tema café.
+ Site desenvolvido no curso técnico de informática com o tema café com foco em responsividade e design.
