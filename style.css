@@ -138,8 +138,11 @@ nav a:hover {
 
 #sobre p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 20px;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
 }
 
 .produtos {
